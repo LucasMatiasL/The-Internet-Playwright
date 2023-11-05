@@ -28,23 +28,27 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    video: 'retain-on-failure';
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'Desktop PC Chrome',
+      retries: 1,
       use: { ...devices['Desktop Chrome'] },
     },
 
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      name: 'Android',
+      retries: 1,
+      use: { ...devices['Galaxy S9+'] },
     },
 
     {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'Iphone',
+      retries: 1,
+      use: { ...devices['iPhone 11 Pro Max'] },
     },
 
     /* Test against mobile viewports. */
