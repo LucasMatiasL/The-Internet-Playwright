@@ -1,16 +1,14 @@
 import { test, Browser, Page, expect } from '@playwright/test';
-import { TheInternetPage } from '../pages/the-internet-page';
 import { addRemoveElements } from '../pages/addRemoveElements';
 
 test.describe('Add/Remove Elements tests', () => {
-    let theInternet: TheInternetPage;
     let arElements: addRemoveElements;
 
     test.beforeEach(async ({ page }) => {
-        theInternet = new TheInternetPage(page);
         arElements = new addRemoveElements(page);
-        await page.goto("");
-        await theInternet.clickAddRemoveElements();
+        await page.goto(
+          "https://the-internet.herokuapp.com/add_remove_elements/"
+        );
     });
 
     test('Add Element button is visible', async ({ page }) => {

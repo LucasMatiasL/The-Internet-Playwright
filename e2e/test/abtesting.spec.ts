@@ -1,17 +1,13 @@
 import { test, Browser, Page, expect } from '@playwright/test';
-import { TheInternetPage } from '../pages/the-internet-page';
 import { abTestingPage } from '../pages/abtesting';
 
 
 test.describe('A/B Testing tests', () => {
-    let theInternet: TheInternetPage;
     let abTesting: abTestingPage;
 
     test.beforeEach(async ({ page }) => {
-        theInternet = new TheInternetPage(page);
         abTesting = new abTestingPage(page);
-        await page.goto("/");
-        await theInternet.clickAbTesting();
+        await page.goto("https://the-internet.herokuapp.com/abtest");
     });
 
 
