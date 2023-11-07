@@ -22,7 +22,7 @@ test.describe("HomePage tests", () => {
     test('Click on Add/Remove Elements', async ({ page }) => {
         await theInternet.clickAddRemoveElements();
         await expect(page).toHaveURL("/add_remove_elements/");
-    })
+    });
     
 
 
