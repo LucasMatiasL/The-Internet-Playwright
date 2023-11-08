@@ -27,7 +27,6 @@ test.describe("Context menu tests", () => {
 
   test.skip('Right clicking the box should display an alert', async ({ page }) => {
     await context.rightClickBox();
-    // It will just show the right click menu :(
   })
   
 
