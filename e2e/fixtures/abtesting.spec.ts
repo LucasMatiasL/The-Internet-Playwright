@@ -1,5 +1,5 @@
 import { test, Browser, Page, expect } from '@playwright/test';
-import { abTestingPage } from '../pages/abtesting';
+import { abTestingPage } from '../pages/Abtesting';
 
 
 test.describe('A/B Testing tests', () => {
