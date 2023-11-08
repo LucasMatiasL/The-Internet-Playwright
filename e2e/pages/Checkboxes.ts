@@ -47,12 +47,12 @@ export class Checkboxes {
     await this.checkSecondBox();
   }
 
-  async selectOnlyFirstCheckbox(){
+  async selectOnlyFirstCheckbox() {
     await this.uncheckSecondBox();
     await this.checkFirstBox();
   }
 
-  async selectOnlySecondCheckbox(){
+  async selectOnlySecondCheckbox() {
     await this.uncheckSecondBox();
     await this.checkSecondBox();
   }
