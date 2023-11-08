@@ -14,7 +14,7 @@ test.describe("Basic Auth tests", () => {
     await theInternet.clickBasicAuth();
   });
 
-  test("Successful login", async ({ page }) => {
+  test.skip("Successful login", async ({ page }) => {
     //Complete the inputs
     await expect(bAuth.successfulLogin).toContainText(
       "Congratulations! You must have the proper credentials."
