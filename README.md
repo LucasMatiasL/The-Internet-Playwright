@@ -37,10 +37,9 @@ cd The-Internet-Playwright
 npm install
 ```
 
-##Running the tests
+## Usage
+### Running the tests
 ```python
 npm init playwright@latest 
 ```
 
-
-npm init playwright@latest 
