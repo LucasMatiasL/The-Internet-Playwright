@@ -8,8 +8,6 @@ A repository demonstrating how to interact with webpages using Playwright, a Nod
   - [Installation](#installation)
 - [Usage](#usage)
   - [Running the Tests](#running-the-tests)
-- [Contributing](#contributing)
-- [License](#license)
 
 
 ## Introduction
