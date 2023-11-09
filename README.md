@@ -12,7 +12,7 @@ A repository demonstrating how to interact with webpages using Playwright, a Nod
 
 ## Introduction
 
-This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright. Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, and UI interactions. This project serves as a resource for learning how to utilize Playwright effectively in web automation projects.
+This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright. Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, and UI interactions.
 
 ## Getting Started
 ### Prerequisites
