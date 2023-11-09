@@ -34,12 +34,12 @@ cd The-Internet-Playwright
 
 3. Install the project dependencies:
 ```python
-npx playwright test
+npm install
 ```
 
 ## Usage
 ### Running the tests
 ```python
-npm init playwright@latest 
+npx playwright test
 ```
 
