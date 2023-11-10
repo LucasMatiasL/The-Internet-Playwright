@@ -32,14 +32,20 @@ git clone https://github.com/LucasMatiasL/The-Internet-Playwright.git
 cd The-Internet-Playwright
 ```
 
-3. Install the project dependencies:
-```python
-npm install
-```
-
 ## Usage
 ### Running the tests
 ```python
 npx playwright test
 ```
+
+###Starts the interactive UI mode.
+```python
+npx playwright test --ui
+```
+
+###Runs the tests only on Desktop Chrome.
+```python
+npx playwright test --project=Desktop-Chrome
+```
+
 
