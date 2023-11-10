@@ -1,4 +1,4 @@
-import { test, Browser, Page, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import { TheInternetPage } from "../pages/the-internet-page";
 
 test.describe("HomePage tests", () => {

@@ -1,4 +1,4 @@
-import { test, Page, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import { Dropdown } from "../pages/Dropdown";
 
 test.describe("Dropdown tests", () => {

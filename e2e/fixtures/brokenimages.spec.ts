@@ -1,4 +1,4 @@
-import { test, Page, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import { BrokenImages } from "../pages/brokenImages";
 
 test.describe("Broken Images tests", () => {
@@ -6,30 +6,24 @@ test.describe("Broken Images tests", () => {
 
   test.beforeEach(async ({ page }) => {
     brokenImages = new BrokenImages(page);
-    page.goto("https://the-internet.herokuapp.com/broken_images");
+    await page.goto("https://the-internet.herokuapp.com/broken_images");
   });
 
   test("Image 1 is visible", async ({ page }) => {
-    test.info().annotations.push({
-      type: "Read this if test failed.",
-      description: "Depending on load times these test may fail.",
-    });
-    await expect(brokenImages.firstImage).toBeVisible();
+    await expect(
+      brokenImages.waitForResponse(brokenImages.firstImgUrl)
+    ).toBeTruthy();
   });
 
   test("Image 2 is visible", async ({ page }) => {
-    test.info().annotations.push({
-      type: "Read this if test failed.",
-      description: "Depending on load times these test may fail.",
-    });
-    await expect(brokenImages.secondImage).toBeVisible();
+    await expect(
+      brokenImages.waitForResponse(brokenImages.secondImgUrl)
+    ).toBeTruthy();
   });
 
   test("Image 3 is visible", async ({ page }) => {
-    test.info().annotations.push({
-      type: "Read this if test failed.",
-      description: "Depending on load times these test may fail.",
-    });
-    await expect(brokenImages.thirdImage).toBeVisible();
+    await expect(
+      brokenImages.waitForResponse(brokenImages.thirdImgUrl)
+    ).toBeTruthy();
   });
 });

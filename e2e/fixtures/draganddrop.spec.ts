@@ -1,4 +1,4 @@
-import { test, Page, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { DragAndDrop } from '../pages/DragAndDrop';
 
 test.describe('Drag and Drop tests', () => {

@@ -42,7 +42,7 @@ export class DissapearingElements{
     }
 
     async portfolioBtnIsVisible(): Promise<boolean>{
-        return await this.portfolio.isVisible();
+        return this.portfolio.isVisible();
     }
 
     async clickPortfolioBtn(){
@@ -60,7 +60,8 @@ export class DissapearingElements{
     }
 
     async clickGalleryBtn(){
-        await this.gallery.click();
+        if(this.galleryBtnIsVisible()  true)
+        this.gallery.click();
     }
 
 

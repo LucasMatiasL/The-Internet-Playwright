@@ -10,7 +10,6 @@ export class DynamicContent {
   }
 
   async compareContentAfterReload(): Promise<boolean> {
-    await this.page.mouse.move(100, 0);
     const getFirstContent: string | null = await this.content.textContent();
     await this.page.reload();
     const getSecondContent: string | null = await this.content.textContent();

@@ -1,4 +1,4 @@
-import { test, Browser, Page, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { addRemoveElements } from '../pages/addRemoveElements';
 
 test.describe('Add/Remove Elements tests', () => {
