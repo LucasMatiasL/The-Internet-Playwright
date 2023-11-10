@@ -38,12 +38,12 @@ cd The-Internet-Playwright
 npx playwright test
 ```
 
-###Starts the interactive UI mode.
+### Starts the interactive UI mode.
 ```python
 npx playwright test --ui
 ```
 
-###Runs the tests only on Desktop Chrome.
+### Runs the tests only on Desktop Chrome.
 ```python
 npx playwright test --project=Desktop-Chrome
 ```
