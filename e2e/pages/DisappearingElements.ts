@@ -60,8 +60,7 @@ export class DissapearingElements{
     }
 
     async clickGalleryBtn(){
-        if(this.galleryBtnIsVisible()  true)
-        this.gallery.click();
+        await this.gallery.click();
     }
 
 
