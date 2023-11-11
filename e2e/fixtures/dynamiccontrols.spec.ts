@@ -40,9 +40,6 @@ test.describe("Dynamic Controls tests", () => {
     await expect(dynamic.waitForIt).toBeVisible();
     await expect(dynamic.textBox).toBeDisabled();
     await expect(dynamic.enableBtn).toBeVisible();
-  })
+  });
   
-  
-
-
 });
