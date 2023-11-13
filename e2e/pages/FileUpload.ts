@@ -8,7 +8,6 @@ export class FileUpload{
     readonly fileUploadedMsg: Locator;
     readonly nameOfFile: Locator;
 
-
     constructor(page: Page){
         this.page = page;
         this.chooseFileBtn = page.locator("#file-upload");

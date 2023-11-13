@@ -12,7 +12,6 @@ export class FloatingMenu{
     readonly contactUrl: string;
     readonly aboutUrl: string;
 
-
     constructor(page: Page){
         this.page = page;
         this.homeBtn = page.getByRole("link", { name: "Home" });

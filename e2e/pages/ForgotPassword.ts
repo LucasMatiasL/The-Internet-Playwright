@@ -5,7 +5,6 @@ export class ForgotPassword{
     readonly textBox: Locator;
     readonly retrievePassBtn: Locator;
 
-
     constructor(page: Page){
         this.page = page;
         this.textBox = page.getByLabel("E-mail");
@@ -13,7 +12,6 @@ export class ForgotPassword{
           name: "Retrieve password",
         });
     }
-
 
     async insertMailAndClickBtn(){
         await this.textBox.fill("playwrightTest@gmail.com");
