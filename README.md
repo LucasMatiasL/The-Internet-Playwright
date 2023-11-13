@@ -32,6 +32,11 @@ git clone https://github.com/LucasMatiasL/The-Internet-Playwright.git
 cd The-Internet-Playwright
 ```
 
+3. Install the dependecies
+```python
+npm i
+```
+
 ## Usage
 ### Running the tests
 ```python
