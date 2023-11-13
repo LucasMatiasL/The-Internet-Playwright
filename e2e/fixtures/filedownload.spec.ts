@@ -4,9 +4,9 @@ import { Filedownload } from "../pages/Filedownload";
 
 test.describe("File Download tests", () => {
   let fileD: Filedownload;
-  const assertText: string = "e2e\\fixturesdownloads\\text.txt";
-  const assertPng: string = "e2e\\fixturesdownloads\\kris.png";
-  const assertJson: string = "e2e\\fixturesdownloads\\preprod.json";
+  const assertText: string = "e2e\\fixtures\\downloads\\text.txt";
+  const assertPng: string = "e2e\\fixtures\\downloads\\kris.png";
+  const assertJson: string = "e2e\\fixtures\\downloads\\preprod.json";
 
   test.beforeEach(async ({ page }) => {
     fileD = new Filedownload(page);
