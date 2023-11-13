@@ -1,17 +1,17 @@
 import { test, expect } from '@playwright/test';
-import { abTestingPage } from '../pages/Abtesting';
+import { abTesting } from '../pages/Abtesting';
 
 
 test.describe('A/B Testing tests', () => {
-    let abTesting: abTestingPage;
+    let abTest: abTesting;
 
     test.beforeEach(async ({ page }) => {
-        abTesting = new abTestingPage(page);
+        abTest = new abTesting(page);
         await page.goto("https://the-internet.herokuapp.com/abtest");
     });
 
     test('Content is displayed', async ({ page }) => {
-        await expect(abTesting.content).toBeVisible();
+        await expect(abTest.content).toBeVisible();
     });
 
 });
