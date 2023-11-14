@@ -1,4 +1,4 @@
-import { test, Page, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import { Frames } from "../pages/Frames";
 
 test.describe("Frames tests", () => {

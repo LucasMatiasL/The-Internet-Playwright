@@ -1,4 +1,4 @@
-import { test, Page, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { ForgotPassword } from '../pages/ForgotPassword';
 
 test.describe('Forgot Password tests', () => {
