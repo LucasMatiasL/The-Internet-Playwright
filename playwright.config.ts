@@ -43,13 +43,7 @@ export default defineConfig({
       name: "Android",
       retries: 1,
       use: { ...devices["Galaxy S9+"] },
-    },
-
-    {
-      name: "Iphone",
-      retries: 1,
-      use: { ...devices["iPhone 11 Pro Max"] },
-    },
+    }
 
     /* Test against mobile viewports. */
     // {
