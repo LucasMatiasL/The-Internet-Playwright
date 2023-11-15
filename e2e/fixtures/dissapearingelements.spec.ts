@@ -47,7 +47,7 @@ test.describe("Dissapearing Elements tests", () => {
   test("Clicking the Gallery button should take me to the Gallery page", async ({
     page,
   }) => {
-    dissapearing.clickGalleryBtn();
-    await expect.soft(page).toHaveURL("https://the-internet.herokuapp.com/gallery/");
+    await dissapearing.clickGalleryBtnWhenVisible();
+    await expect(page).toHaveURL("https://the-internet.herokuapp.com/gallery/");
   });
 });
