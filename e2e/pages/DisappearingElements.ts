@@ -53,16 +53,4 @@ export class DissapearingElements {
     return await this.gallery.isVisible();
   }
 
-  async reloadPageUntilVisible() {
-    while (!this.galleryBtnIsVisible) {
-      await this.page.reload();
-    }
-  }
-
-  async clickGalleryBtnWhenVisible() {
-    while (!this.galleryBtnIsVisible) {
-      await this.page.reload();
-    }
-    await this.gallery.click();
-  }
 }

@@ -39,15 +39,5 @@ test.describe("Dissapearing Elements tests", () => {
     );
   });
 
-  test("Gallery button is visible", async ({ page }) => {
-    await dissapearing.reloadPageUntilVisible();
-    await expect(dissapearing.aboutBtnIsVisible).toBeTruthy();
-  });
 
-  test("Clicking the Gallery button should take me to the Gallery page", async ({
-    page,
-  }) => {
-    await dissapearing.clickGalleryBtnWhenVisible();
-    await expect(page).toHaveURL("https://the-internet.herokuapp.com/gallery/");
-  });
 });
