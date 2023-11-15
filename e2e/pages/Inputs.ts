@@ -13,14 +13,9 @@ export class Inputs {
     await this.textBox.fill(numbers);
   }
 
-  async tryToWriteText(text: string){
+  async tryToWriteText(text: string) {
     try {
-        await this.textBox.fill(text)
-    } catch (error) {
-        console.log("Can't write text here.")
-    }
+      await this.textBox.fill(text);
+    } catch (error) {}
   }
-
-
-
 }

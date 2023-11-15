@@ -1,7 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { Filedownload } from "../pages/Filedownload";
 
-
 test.describe("File Download tests", () => {
   let fileD: Filedownload;
   const assertText: string = "e2e\\fixtures\\downloads\\text.txt";
