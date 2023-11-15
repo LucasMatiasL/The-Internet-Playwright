@@ -12,7 +12,9 @@ A repository demonstrating how to interact with webpages using Playwright, a Nod
 
 ## Introduction
 
-This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright. Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, and UI interactions.
+This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright with TypeScript.
+Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, and UI interactions.
+The design pattern used for this project is Page Object Model.
 
 ## Getting Started
 ### Prerequisites
