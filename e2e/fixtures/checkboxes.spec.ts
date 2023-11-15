@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { Checkboxes } from '../pages/checkboxes';
+import { Checkboxes } from '../pages/Checkboxes';
 
 test.describe('Checkboxes tests', () => {
     let checkbox: Checkboxes;

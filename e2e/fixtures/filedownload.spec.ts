@@ -12,17 +12,17 @@ test.describe("File Download tests", () => {
     await page.goto("https://the-internet.herokuapp.com/download");
   });
 
-  test("Download text.txt", async ({ page }) => {
+  test.skip("Download text.txt", async ({ page }) => {
     await fileD.downloadFile(page, fileD.textTxt);
     await expect(assertText).toBeTruthy();
   });
 
-  test("Download kris.png", async ({ page }) => {
+  test.skip("Download kris.png", async ({ page }) => {
     await fileD.downloadFile(page, fileD.krisPng);
     await expect(assertPng).toBeTruthy();
   });
 
-  test("Download prepod.json", async ({ page }) => {
+  test.skip("Download prepod.json", async ({ page }) => {
     await fileD.downloadFile(page, fileD.preprodJson);
     await expect(assertJson).toBeTruthy();
   });

@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
-import { abTesting } from '../pages/Abtesting';
+import { Abtesting } from '../pages/Abtesting';
 
 
 test.describe('A/B Testing tests', () => {
-    let abTest: abTesting;
+    let abTest: Abtesting;
 
     test.beforeEach(async ({ page }) => {
-        abTest = new abTesting(page);
+        abTest = new Abtesting(page);
         await page.goto("https://the-internet.herokuapp.com/abtest");
     });
 
