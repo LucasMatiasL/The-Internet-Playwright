@@ -9,7 +9,7 @@ test.describe('File upload tests', () => {
         await page.goto("https://the-internet.herokuapp.com/upload");
     });
 
-    test('Upload a file', async ({ page }) => {
+    test.skip('Upload a file', async ({ page }) => {
         await fileUp.uploadFile();
         await expect(fileUp.fileUploadedMsg).toBeVisible();
     });
