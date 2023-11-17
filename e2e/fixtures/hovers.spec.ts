@@ -9,10 +9,15 @@ test.describe("Hovers tests", () => {
     await page.goto("https://the-internet.herokuapp.com/hovers");
   });
 
-  test("Image 1 has the correct information.", async ({ page }) => {
+  test("Image 1 has the correct information.", async () => {
     await hover.moveToImg(hover.img1);
-    await expect(hover.content1).toHaveText("name: user1");
-    await expect(hover.viewProfile1).toHaveAttribute('href');
+    await expect(hover.content1, "Incorrect user displayed").toHaveText(
+      "name: user1"
+    );
+    await expect(
+      hover.viewProfile1,
+      "View profile link doesn't work."
+    ).toHaveAttribute("href");
   });
 
   test('Clicking the user1 "View Profile" link takes me to the profile', async ({
@@ -22,10 +27,15 @@ test.describe("Hovers tests", () => {
     await expect(page).toHaveURL("https://the-internet.herokuapp.com/users/1");
   });
 
-  test("Image 2 has the correct information", async ({ page }) => {
+  test("Image 2 has the correct information", async () => {
     await hover.moveToImg(hover.img2);
-    await expect(hover.content2).toHaveText("name: user2");
-    await expect(hover.viewProfile2).toHaveAttribute("href");
+    await expect(hover.content2, "Incorrect user displayed").toHaveText(
+      "name: user2"
+    );
+    await expect(
+      hover.viewProfile2,
+      "View profile link doesn't work."
+    ).toHaveAttribute("href");
   });
 
   test('Clicking the user2 "View Profile" link takes me to the profile', async ({
@@ -35,10 +45,15 @@ test.describe("Hovers tests", () => {
     await expect(page).toHaveURL("https://the-internet.herokuapp.com/users/2");
   });
 
-  test("Image 3 has the correct information", async ({ page }) => {
+  test("Image 3 has the correct information", async () => {
     await hover.moveToImg(hover.img3);
-    await expect(hover.content3).toHaveText("name: user3");
-    await expect(hover.viewProfile3).toHaveAttribute("href");
+    await expect(hover.content3, "Incorrect user displayed").toHaveText(
+      "name: user3"
+    );
+    await expect(
+      hover.viewProfile3,
+      "View profile link doesn't work."
+    ).toHaveAttribute("href");
   });
 
   test('Clicking the user3 "View Profile" link takes me to the profile', async ({

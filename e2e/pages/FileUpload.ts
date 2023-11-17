@@ -13,6 +13,7 @@ export class FileUpload{
         this.chooseFileBtn = page.locator("#file-upload");
         this.uploadFileBtn = page.getByRole("button", { name: "Upload" });
         this.fileUploadedMsg = page.getByRole("heading", { name: "File Uploaded!" });
+        this.nameOfFile = page.getByText("upload.txt");
     }
 
     async uploadFile(){

@@ -9,11 +9,11 @@ test.describe("Shadow DOM tests", () => {
     await page.goto("https://the-internet.herokuapp.com/shadowdom");
   });
 
-  test("Element 1 is visible", async ({ page }) => {
-    await expect(shdw.firstElement).toBeVisible();
+  test("Element 1 is visible", async () => {
+    await expect(shdw.firstElement, "Element 1 is not visible.").toBeVisible();
   });
 
-  test("Element 2 is visible", async ({ page }) => {
-    await expect(shdw.secondElement).toBeVisible();
+  test("Element 2 is visible", async () => {
+    await expect(shdw.secondElement, "Element 2 is not visible.").toBeVisible();
   });
 });

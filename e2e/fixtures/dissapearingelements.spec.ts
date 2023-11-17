@@ -38,6 +38,4 @@ test.describe("Dissapearing Elements tests", () => {
       "https://the-internet.herokuapp.com/portfolio/"
     );
   });
-
-
 });

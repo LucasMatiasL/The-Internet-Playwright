@@ -32,6 +32,9 @@ test.describe("Multiple Windows tests", () => {
       context.waitForEvent("page"), //listener
       await window.clickOnNewTab(), //event on the promise page
     ]);
-    await expect(window.newWindowContent).toBeVisible();
+    await expect(
+      window.newWindowContent,
+      "Content is not visible."
+    ).toBeVisible();
   });
 });

@@ -9,23 +9,22 @@ test.describe("Key Presses tests", () => {
     await page.goto("https://the-internet.herokuapp.com/key_presses");
   });
 
-  test('Write "T" and assert that "T" was pressed', async ({ page }) => {
+  test('Write "T" and assert that "T" was pressed', async () => {
     await key.typeTest();
-    await expect(key.lastKeyT).toHaveText("You entered: T");
+    await expect(key.lastKeyT, "Wrong message.").toHaveText("You entered: T");
   });
 
-  test("Press the down key and assert that it was pressed", async ({
-    page,
-  }) => {
+  test("Press the down key and assert that it was pressed", async () => {
     await key.pressDownKey();
-    await expect(key.lastKeyDown).toHaveText("You entered: DOWN");
+    await expect(key.lastKeyDown, "Wrong message.").toHaveText(
+      "You entered: DOWN"
+    );
   });
 
-  test("Write and delete and assert that the backspace key was pressed", async ({
-    page,
-  }) => {
+  test("Write and delete and assert that the backspace key was pressed", async () => {
     await key.deleteText();
-    await expect(key.lastKeyBackSpace).toContainText("You entered: BACK_SPACE");
+    await expect(key.lastKeyBackSpace, "Wrong message.").toContainText(
+      "You entered: BACK_SPACE"
+    );
   });
-  
 });

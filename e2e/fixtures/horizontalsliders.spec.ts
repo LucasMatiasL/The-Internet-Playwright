@@ -9,23 +9,32 @@ test.describe("Horizontal slider tests", () => {
     await page.goto("https://the-internet.herokuapp.com/horizontal_slider");
   });
 
-  test("Slider is visible and has a value of 0", async ({ page }) => {
-    await expect(horizontal.slider).toBeVisible();
-    await expect(horizontal.range).toContainText("0");
+  test("Slider is visible and has a value of 0", async () => {
+    await expect(horizontal.slider, "Slider is not visible.").toBeVisible();
+    await expect(
+      horizontal.range,
+      "Range of slider is not visible."
+    ).toContainText("0");
   });
 
-  test("Move the slider to the middle (2,5)", async ({ page }) => {
+  test("Move the slider to the middle (2,5)", async () => {
     await horizontal.moveSliderToMiddle();
-    await expect(horizontal.range).toContainText("2.5");
+    await expect(horizontal.range, "The value is incorrect.").toContainText(
+      "2.5"
+    );
   });
 
-  test("Move slider to the right (5)", async ({ page }) => {
+  test("Move slider to the right (5)", async () => {
     await horizontal.moveSliderToRight();
-    await expect(horizontal.range).toContainText("5");
+    await expect(horizontal.range, "The value is incorrect.").toContainText(
+      "5"
+    );
   });
 
-  test("Move back the slider to the left (0)", async ({ page }) => {
+  test("Move back the slider to the left (0)", async () => {
     await horizontal.moveSliderRightAndLeft();
-    await expect(horizontal.range).toContainText("0");
+    await expect(horizontal.range, "The value is incorrect.").toContainText(
+      "0"
+    );
   });
 });

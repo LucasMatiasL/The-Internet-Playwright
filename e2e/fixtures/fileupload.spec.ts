@@ -9,8 +9,15 @@ test.describe("File upload tests", () => {
     await page.goto("https://the-internet.herokuapp.com/upload");
   });
 
-  test.skip("Upload a file", async ({ page }) => {
+  test("Upload a file", async () => {
     await fileUp.uploadFile();
-    await expect(fileUp.fileUploadedMsg).toBeVisible();
+    await expect(
+      fileUp.fileUploadedMsg,
+      "Message didn't appear."
+    ).toBeVisible();
+    await expect(
+      fileUp.nameOfFile,
+      "The name of the file is not displayed/It shows the wrong file."
+    ).toBeVisible();
   });
 });

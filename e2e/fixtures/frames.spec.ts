@@ -9,12 +9,15 @@ test.describe("Frames tests", () => {
     await page.goto("https://the-internet.herokuapp.com/iframe");
   });
 
-  test("Assert that the text editor is visible", async ({ page }) => {
-    await expect(frame.editor).toBeVisible();
+  test("Assert that the text editor is visible", async () => {
+    await expect(frame.editor, "Text editor is not visible.").toBeVisible();
   });
 
-  test("Can type text in the editor", async ({ page }) => {
+  test("Can type text in the editor", async () => {
     await frame.typeText();
-    await expect(frame.content).toContainText("test");
+    await expect(
+      frame.content,
+      "Coudn't type in the text editor."
+    ).toContainText("test");
   });
 });

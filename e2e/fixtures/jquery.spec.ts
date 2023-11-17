@@ -10,7 +10,7 @@ test.describe("JQuery UI Menu tests", () => {
     await page.goto("https://the-internet.herokuapp.com/jqueryui/menu");
   });
 
-  test('Try to click "Disabled" option', async ({ page }) => {
+  test('Try to click "Disabled" option', async () => {
     await jq.doHoverOnDisabled(jq.disabledMenu);
   });
 

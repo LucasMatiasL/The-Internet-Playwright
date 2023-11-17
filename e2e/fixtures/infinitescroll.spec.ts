@@ -9,8 +9,11 @@ test.describe("Infinite Scroll tests", () => {
     await page.goto("https://the-internet.herokuapp.com/infinite_scroll");
   });
 
-  test("When I scroll down more content is created.", async ({ page }) => {
+  test("When I scroll down more content is created.", async () => {
     await infinite.scrollDown();
-    await expect(infinite.newContent).toBeVisible();
+    await expect(
+      infinite.newContent,
+      "Couldn't find new content."
+    ).toBeVisible();
   });
 });
