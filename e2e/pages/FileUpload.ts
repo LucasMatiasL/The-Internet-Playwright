@@ -20,7 +20,7 @@ export class FileUpload {
 
   async uploadFile() {
     await this.chooseFileBtn.setInputFiles(
-      path.join("e2e\\fixtures\\upload", "upload.txt")
+      path.join("e2e/fixtures/upload", "upload.txt")
     );
     await this.uploadFileBtn.click();
   }
