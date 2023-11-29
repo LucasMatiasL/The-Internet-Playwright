@@ -29,12 +29,9 @@ Ensure you have the following software installed on your system:
 git clone https://github.com/LucasMatiasL/The-Internet-Playwright.git
 ```
 
-2. Navigate to the project directory:
-```python
-cd The-Internet-Playwright
-```
+2. Navigate to the project directory.
 
-3. Install the dependecies
+3. Install the dependecies:
 ```python
 npm i
 ```
