@@ -21,7 +21,7 @@ Playwright provides a high-level API for automating web browsers, enabling tasks
 
 Ensure you have the following software installed on your system:
 - [Git Bash](https://git-scm.com/downloads)
-- [nvm] (https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 - [npm](https://www.npmjs.com/) (typically bundled with Node.js)
 
 ## Installation
