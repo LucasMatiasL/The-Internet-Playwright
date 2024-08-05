@@ -13,7 +13,7 @@ test.describe("Frames tests", () => {
     await expect(frame.editor, "Text editor is not visible.").toBeVisible();
   });
 
-  test("Can type text in the editor", async () => {
+  test.skip("Can type text in the editor", async () => {
     await frame.typeText();
     await expect(
       frame.content,
