@@ -1,5 +1,5 @@
 # Web Interaction with Playwright
-A repository demonstrating how to interact with webpages using Playwright, a Node.js library for automating browsers.
+A repository demonstrating how to interact with webpages using Playwright, a Node.js library for automating testing.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -12,14 +12,15 @@ A repository demonstrating how to interact with webpages using Playwright, a Nod
 
 ## Introduction
 
-This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright with TypeScript.
-Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, and UI interactions.
-The design pattern used for this project is Page Object Model.
+This repository contains examples and code snippets demonstrating how to interact with webpages using Playwright with TypeScript using Page Object
+Model as a design pattern.
+Playwright provides a high-level API for automating web browsers, enabling tasks such as form submission, content extraction, UI interactions and more.
 
 ## Getting Started
 ### Prerequisites
 
 Ensure you have the following software installed on your system:
+- [Git Bash](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/) (version 20.9.0 or higher)
 - [npm](https://www.npmjs.com/) (typically bundled with Node.js)
 
