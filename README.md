@@ -21,7 +21,7 @@ Playwright provides a high-level API for automating web browsers, enabling tasks
 
 Ensure you have the following software installed on your system:
 - [Git Bash](https://git-scm.com/downloads)
-- [Node.js](https://nodejs.org/) (version 20.9.0 or higher)
+- [nvm] (https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 - [npm](https://www.npmjs.com/) (typically bundled with Node.js)
 
 ## Installation
@@ -31,11 +31,6 @@ git clone https://github.com/LucasMatiasL/The-Internet-Playwright.git
 ```
 
 2. Navigate to the project directory.
-
-3. Install the dependecies:
-```python
-npm i
-```
 
 ## Usage
 ### Running the tests
@@ -51,6 +46,11 @@ npx playwright test --ui
 ### Runs the tests only on Desktop Chrome.
 ```python
 npx playwright test --project=Desktop-Chrome
+```
+
+### Runs the tests only on Mobile Android.
+```python
+npx playwright test --project=Android
 ```
 
 
