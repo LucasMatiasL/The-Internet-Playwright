@@ -29,7 +29,7 @@ git clone https://github.com/LucasMatiasL/The-Internet-Playwright.git
 
 1. Open the project folder using Git Bash.
 2. Write any of the following commands.
-3. 
+
 ### Running the tests
 ```python
 npx playwright test
