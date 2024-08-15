@@ -1,12 +1,3 @@
-## Table of Contents
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-  - [Running the Tests](#running-the-tests)
-
-
 ## 🔎 Introduction
 This repository demonstrates how to interact with webpages using Playwright, a Node.js library for automating testing.
 It contains a full end to end suite of the website https://the-internet.herokuapp.com/ using TypeScript and Page Object Model as a design pattern.
