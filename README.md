@@ -50,4 +50,8 @@ npx playwright test --project=Desktop-Chrome
 npx playwright test --project=Android
 ```
 
+## 🧪 Show report after the tests are done!
+```python
+npx playwright show-report
+```
 
